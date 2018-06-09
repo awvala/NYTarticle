@@ -24,11 +24,17 @@ $("#submitButton").click(function() {
      //console.log(data.response.docs[1].pub_date);
      //console.log(queryURL);
 
-     for (i =0; i < numRec; ++) {
+     //for (i =0; i < numRec; ++) {
         
-     }
+     //}
 
      })
     })
 
+    $("#trashButton").click(function() {
+        $("#searchTermLb").val("");
+        $("#startYearLb").val("");
+        var endDate = $("#endYearLb").val("");
+        var numRec = $("#exampleFormControlSelect1").val(1);
+    })
 });
